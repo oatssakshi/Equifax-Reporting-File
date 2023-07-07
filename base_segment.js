@@ -58,7 +58,7 @@ ${recordDescriptor} ${processingIndicator} ${timeStamp} ${correctionIndicator} $
 `;
 
 // Specify the file path and name
-const filePath = 'base_segment.txt';
+const filePath = 'base_seg_report.txt';
 
 // Write the data record file
 fs.writeFile(filePath, dataRecord, (err) => {

@@ -21,7 +21,7 @@ const reserved= 'Blank-fill';
  const headerRecord = `Record Descriptor${recordDescriptorWord}\n ${recordIdentifier} ${cycleNumber} innovisProgramIdentifier-NA ${equifaxProgramIdentifier} experianProgramIdentifier-NA transunionProgramIdentifier-NA ${activityDate} ${dateCreated} ${programDate} ${programRevisionDate} ${reporterName} ${reporterAddress} ${reporterTelephoneNumber} ${softwareVendorname} softwareVersionNumber-NA ${microBiltIdentifier} ${reserved}`;
 
 // Specify the file path and name
-const filePath = 'header_record.txt';
+const filePath = 'header_report.txt';
 
 // Write the header record file
 

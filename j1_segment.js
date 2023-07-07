@@ -5,7 +5,7 @@ const segmentIdentifier = 'J1';
 const consumerTransactionType = '1';
 const surname = 'Smith';
 const firstName = 'Justin';
-const middleName = '';
+const middleName = 'Frank';
 const generationCode = 'J';
 const socialSecurityNumber = '123456789';
 const dateOfBirth = 'MMDDYYYY';
@@ -20,7 +20,7 @@ ${segmentIdentifier} ${consumerTransactionType} ${surname} ${firstName} ${middle
 `;
 
 // Specify the file path and name
-const filePath = 'j1_segment.txt';
+const filePath = 'j1_report.txt';
 
 // Write the J1 segment file
 fs.writeFile(filePath, j1Segment, (err) => {

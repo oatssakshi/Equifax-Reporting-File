@@ -28,7 +28,7 @@ ${segmentIdentifier} ${consumerTransactionType} ${surname} ${firstName} ${middle
 `;
 
 // Specify the file path and name
-const filePath = 'j2_segment.txt';
+const filePath = 'j2_report.txt';
 
 // Write the J2 segment file
 fs.writeFile(filePath, j2Segment, (err) => {
