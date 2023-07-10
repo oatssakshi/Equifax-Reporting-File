@@ -1,6 +1,5 @@
 const fs = require('fs');
 
-// Sample variables
 // const blockDescriptorWord = '0000';
 const recordDescriptorWord = '0000';
 const recordIdentifier = 'HEADER';
@@ -20,11 +19,10 @@ const reserved= 'Blank-fill';
 // Generate the content of the header record using template literals
  const headerRecord = `Record Descriptor${recordDescriptorWord}\n ${recordIdentifier} ${cycleNumber} innovisProgramIdentifier-NA ${equifaxProgramIdentifier} experianProgramIdentifier-NA transunionProgramIdentifier-NA ${activityDate} ${dateCreated} ${programDate} ${programRevisionDate} ${reporterName} ${reporterAddress} ${reporterTelephoneNumber} ${softwareVendorname} softwareVersionNumber-NA ${microBiltIdentifier} ${reserved}`;
 
-// Specify the file path and name
+
 const filePath = 'header_report.txt';
 
 // Write the header record file
-
 fs.writeFile(filePath, headerRecord, (err) => {
   if (err) {
     console.error('Error writing the header record file:', err);

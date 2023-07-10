@@ -1,6 +1,5 @@
 const fs = require('fs');
 
-// Sample variables
 const segmentIdentifier = 'J2';
 const consumerTransactionType = '0';
 const surname = 'Smith';
@@ -27,7 +26,6 @@ const j2Segment = `
 ${segmentIdentifier} ${consumerTransactionType} ${surname} ${firstName} ${middleName} ${generationCode} ${socialSecurityNumber} ${dateOfBirth} ${telephoneNumber} ${associationCode} ${consumerInformationIndicator} ${countryCode} ${firstLineOfAddress} ${secondLineOfAddress} ${city} ${state} ${postalZipCode} ${addressIndicator} ${residenceCode} ${reserved}
 `;
 
-// Specify the file path and name
 const filePath = 'j2_report.txt';
 
 // Write the J2 segment file

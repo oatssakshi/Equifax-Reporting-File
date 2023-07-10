@@ -1,8 +1,7 @@
 const fs = require('fs');
 
-// Sample variables
 const segmentIdentifier = "N1";
-const employerName = "Acme Corporation";
+const employerName = "Tom Jones";
 const employerAddressLine1 = "123 Main St";
 const employerAddressLine2 = "Suite 456";
 const employerCity = "Cityville";
@@ -15,7 +14,7 @@ const reserved=' ';
 const segmentContent = `${segmentIdentifier} ${employerName} ${employerAddressLine1} ${employerAddressLine2} ${employerCity} ${employerState} ${employerPostalCode} ${occupation} ${ reserved}
 `;
 
-// Specify the file path and name
+
 const filePath = 'n1_report.txt';
 
 // Write the file

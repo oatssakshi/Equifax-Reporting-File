@@ -1,6 +1,5 @@
 const fs = require('fs');
 
-// Sample variables
 const segmentIdentifier = "K4";
 const specializedPaymentIndicator = "SP";
 const deferredPaymentStartDate = "20220101";
@@ -11,7 +10,7 @@ const reserved=' ';
 // Generate the content of the K4 segment using template literals
 const segmentContent = `${segmentIdentifier} ${specializedPaymentIndicator} ${deferredPaymentStartDate} ${balloonPaymentDueDate} ${balloonPaymentAmount} ${reserved}`;
 
-// Specify the file path and name
+
 const filePath = 'k4_report.txt';
 
 // Write the file
