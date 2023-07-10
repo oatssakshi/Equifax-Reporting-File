@@ -21,14 +21,14 @@ const addressIndicator = 'Y';
 const residenceCode = 'R';
 const reserved = '  ';
 
-// Generate the content of the J2 segment using template literals
+// Generating the content of the J2 segment using template literals
 const j2Segment = `
 ${segmentIdentifier} ${consumerTransactionType} ${surname} ${firstName} ${middleName} ${generationCode} ${socialSecurityNumber} ${dateOfBirth} ${telephoneNumber} ${associationCode} ${consumerInformationIndicator} ${countryCode} ${firstLineOfAddress} ${secondLineOfAddress} ${city} ${state} ${postalZipCode} ${addressIndicator} ${residenceCode} ${reserved}
 `;
 
 const filePath = 'j2_report.txt';
 
-// Write the J2 segment file
+
 fs.writeFile(filePath, j2Segment, (err) => {
   if (err) {
     console.error('Error writing the J2 segment file:', err);

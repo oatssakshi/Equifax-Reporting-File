@@ -16,13 +16,13 @@ const softwareVendorname ='Name of software';
 const microBiltIdentifier ='Idendification-number-of-Agency';
 const reserved= 'Blank-fill';
 
-// Generate the content of the header record using template literals
+// Generating the content of the header record using template literals
  const headerRecord = `Record Descriptor${recordDescriptorWord}\n ${recordIdentifier} ${cycleNumber} innovisProgramIdentifier-NA ${equifaxProgramIdentifier} experianProgramIdentifier-NA transunionProgramIdentifier-NA ${activityDate} ${dateCreated} ${programDate} ${programRevisionDate} ${reporterName} ${reporterAddress} ${reporterTelephoneNumber} ${softwareVendorname} softwareVersionNumber-NA ${microBiltIdentifier} ${reserved}`;
 
 
 const filePath = 'header_report.txt';
 
-// Write the header record file
+
 fs.writeFile(filePath, headerRecord, (err) => {
   if (err) {
     console.error('Error writing the header record file:', err);

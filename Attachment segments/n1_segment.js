@@ -10,7 +10,7 @@ const employerPostalCode = "12345";
 const occupation = "Software Engineer";
 const reserved=' ';
 
-// Generate the content of the N1 segment using template literals
+// Generating the content of the N1 segment using template literals
 const segmentContent = `${segmentIdentifier} ${employerName} ${employerAddressLine1} ${employerAddressLine2} ${employerCity} ${employerState} ${employerPostalCode} ${occupation} ${ reserved}
 `;
 

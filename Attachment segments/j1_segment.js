@@ -13,14 +13,14 @@ const associationCode = '1';
 const consumerInformationIndicator = '00';
 const reserved = ' ';
 
-// Generate the content of the J1 segment using template literals
+// Generating the content of the J1 segment using template literals
  const j1Segment = `
 ${segmentIdentifier} ${consumerTransactionType} ${surname} ${firstName} ${middleName} ${generationCode} ${socialSecurityNumber} ${dateOfBirth} ${telephoneNumber} ${associationCode} ${consumerInformationIndicator} ${reserved}
 `;
 
 const filePath = 'j1_report.txt';
 
-// Write the J1 segment file
+
 fs.writeFile(filePath, j1Segment, (err) => {
   if (err) {
     console.error('Error writing the J1 segment file:', err);

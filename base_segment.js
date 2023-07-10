@@ -50,14 +50,14 @@ const addressIndicator = 'C';
 const residenceCode = '34567';
 const reserved = '     ';
 
-// Generate the content of the data record using template literals
+// Generating the content of the data record using template literals
  const dataRecord = `
 ${recordDescriptor} ${processingIndicator} ${timeStamp} ${correctionIndicator} ${identificationNumber} ${cycleIdentifier} ${consumerAccountNumber} ${portfolioType} ${accountType} ${dateOpened} ${creditLimit} ${highestCreditAmount} ${termsDuration} ${termsFrequency} ${scheduledPaymentAmount} ${actualPaymentAmount}${accountStatus}${paymentRating}${paymentHistoryProfile}${specialComment}${complianceConditionCode}${currentBalance} ${amountPastDue} ${originalChargeOffAmount} ${dateOfAccountInformation}${fcraComplianceDate}${dateClosed} ${dateLastPayment} ${currencyTypeCode} ${reserved} ${consumerTransactionType} ${surname} ${firstName} ${middleName} ${generationCode}${socialSecurityNumber}${dateOfBirth} ${telephoneNumber} ${associationCode} ${consumerInformationIndicator} ${countryCode} ${firstLineOfAddress} ${secondLineOfAddress} ${city} ${state} ${postalCode} ${addressIndicator} ${residenceCode}
 `;
 
 const filePath = 'base_seg_report.txt';
 
-// Write the data record file
+
 fs.writeFile(filePath, dataRecord, (err) => {
     if (err) {
         console.error('Error writing the data record file:', err);
