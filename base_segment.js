@@ -1,4 +1,4 @@
-const fs = require('fs');
+// Sample variables for base seg record
 
 // const blockDescriptorWord = '0000';
 const recordDescriptor = '0000';
@@ -6,7 +6,7 @@ const processingIndicator = '1';
 const timeStamp = 'MMDDYYYHHMMSS';
 const correctionIndicator = '0';
 const identificationNumber = '12345678901234567890';
-const cycleIdentifier = '';
+const cycleIdentifier ='';
 const consumerAccountNumber = 'C123456789012345678901234567';
 const portfolioType = 'O';
 const accountType = '01';
@@ -29,7 +29,7 @@ const dateOfAccountInformation = '20220101';
 const fcraComplianceDate = '20220101';
 const dateClosed = 'MMDDYYY';
 const dateLastPayment = '20220101';
-const currencyTypeCode = ' 998';
+const currencyTypeCode = '998';
 const consumerTransactionType = '0';
 const surname = 'Jackson';
 const firstName = 'Albert';
@@ -48,22 +48,11 @@ const state = 'CA';
 const postalCode = '12345';
 const addressIndicator = 'C';
 const residenceCode = '34567';
-const reserved = '     ';
+const reserved = '';
 
 // Generating the content of the data record using template literals
- const dataRecord = `
-${recordDescriptor} ${processingIndicator} ${timeStamp} ${correctionIndicator} ${identificationNumber} ${cycleIdentifier} ${consumerAccountNumber} ${portfolioType} ${accountType} ${dateOpened} ${creditLimit} ${highestCreditAmount} ${termsDuration} ${termsFrequency} ${scheduledPaymentAmount} ${actualPaymentAmount}${accountStatus}${paymentRating}${paymentHistoryProfile}${specialComment}${complianceConditionCode}${currentBalance} ${amountPastDue} ${originalChargeOffAmount} ${dateOfAccountInformation}${fcraComplianceDate}${dateClosed} ${dateLastPayment} ${currencyTypeCode} ${reserved} ${consumerTransactionType} ${surname} ${firstName} ${middleName} ${generationCode}${socialSecurityNumber}${dateOfBirth} ${telephoneNumber} ${associationCode} ${consumerInformationIndicator} ${countryCode} ${firstLineOfAddress} ${secondLineOfAddress} ${city} ${state} ${postalCode} ${addressIndicator} ${residenceCode}
-`;
+ const dataRecord = `${recordDescriptor}${processingIndicator}${timeStamp}${correctionIndicator}${identificationNumber}${cycleIdentifier}${consumerAccountNumber}${portfolioType}${accountType}${dateOpened}${creditLimit}${highestCreditAmount}${termsDuration}${termsFrequency}${scheduledPaymentAmount}${actualPaymentAmount}${accountStatus}${paymentRating}${paymentHistoryProfile}${specialComment}${complianceConditionCode}${currentBalance}${amountPastDue}${originalChargeOffAmount}${dateOfAccountInformation}${fcraComplianceDate}${dateClosed}${dateLastPayment}${currencyTypeCode}${reserved}${consumerTransactionType}${surname}${firstName}${middleName}${generationCode}${socialSecurityNumber}${dateOfBirth}${telephoneNumber}${associationCode}${consumerInformationIndicator}${countryCode}${firstLineOfAddress}${secondLineOfAddress}${city}${state}${postalCode}${addressIndicator}${residenceCode}`;
 
-const filePath = 'base_seg_report.txt';
-
-
-fs.writeFile(filePath, dataRecord, (err) => {
-    if (err) {
-        console.error('Error writing the data record file:', err);
-    } else {
-        console.log(`Data record file ${filePath} created successfully.`);
-    }
-});
+module.exports= dataRecord;
 
 

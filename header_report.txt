@@ -1,2 +1,0 @@
-Record Descriptor0000
- HEADER 01 innovisProgramIdentifier-NA EQPRGID experianProgramIdentifier-NA transunionProgramIdentifier-NA MMDDYYYY MMDDYYYY MMDDYYYY MMDDYYYY Your-Company-Name Address-of-reporter 123-456-7890 Name of software softwareVersionNumber-NA Idendification-number-of-Agency Blank-fill

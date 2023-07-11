@@ -1,9 +1,9 @@
-const fs = require ('fs');
+// Sample variables for trailer record
 
 const recordDescriptorWord = "0000";
 const recordIdentifier = "TRAILER";
 const totalBaseRecords = "1000";
-const reserved1 =" ";
+const reserved1 ="";
 const totalJ1Segments = "50";
 const totalStatusDF = "10";
 const totalJ2Segments = "20";
@@ -49,18 +49,8 @@ const totalPhoneAll = "60";
 const reserved2 = "";
 
 // Generating the content of the Trailer record using template literals
-const trailerContent = `${recordDescriptorWord} ${recordIdentifier} ${totalBaseRecords} ${reserved1} ${totalJ1Segments} ${totalStatusDF} ${totalJ2Segments} ${blockCount} ${totalStatusDA} ${totalStatus05} ${totalStatus11} ${totalStatus13} ${totalStatus61} ${totalStatus62} ${totalStatus63} ${totalStatus64} ${totalStatus65} ${totalStatus71} ${totalStatus78} ${totalStatus80} ${totalStatus82} ${totalStatus83} ${totalStatus84} ${totalStatus88} ${totalStatus89} ${totalStatus93} ${totalStatus94} ${totalStatus95} ${totalStatus96} ${totalStatus97} ${totalECOAZ} ${totalEmploymentSegments} ${totalOrigCredSegments} ${totalPurchSoldSeg} ${totalMugInfoSegs} ${totalSpecPymntSegs} ${totalChangeSegs} ${totalSSNAll} ${totalSSNBase} ${totalSSNJI} ${totalSSNJ2} ${totalBirthdayAll} ${totalBirthdayBase} ${totalBirthdayJ1} ${totalBirthdayJ2} ${totalPhoneAll} ${reserved2}`;
+const trailerRecord = `${recordDescriptorWord}${recordIdentifier}${totalBaseRecords}${reserved1}${totalJ1Segments}${totalStatusDF}${totalJ2Segments}${blockCount}${totalStatusDA}${totalStatus05}${totalStatus11}${totalStatus13}${totalStatus61}${totalStatus62}${totalStatus63}${totalStatus64}${totalStatus65}${totalStatus71}${totalStatus78}${totalStatus80}${totalStatus82}${totalStatus83}${totalStatus84}${totalStatus88}${totalStatus89}${totalStatus93}${totalStatus94}${totalStatus95}${totalStatus96}${totalStatus97}${totalECOAZ}${totalEmploymentSegments}${totalOrigCredSegments}${totalPurchSoldSeg}${totalMugInfoSegs}${totalSpecPymntSegs}${totalChangeSegs}${totalSSNAll}${totalSSNBase}${totalSSNJI}${totalSSNJ2}${totalBirthdayAll}${totalBirthdayBase}${totalBirthdayJ1}${totalBirthdayJ2}${totalPhoneAll}${reserved2}`;
 
 
-const filePath = 'trailer_report.txt';
-
-fs.writeFile(filePath, trailerContent, (err) => {
-  if (err) {
-    console.error('Error writing the file:', err);
-  } else {
-    console.log(`File ${filePath} created successfully.`);
-  }
-});
-
-
+module.exports = trailerRecord;
 
