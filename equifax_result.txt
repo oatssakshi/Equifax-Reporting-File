@@ -28,5 +28,5 @@ K4SP20220101202212315000
  L1 Segment
 L1Y1234567890ABC123
 
- N1 Segmen
+ N1 Segment
 tN1TomJones123-Main-StSuite-456CityvilleST12345Software Engineer 
